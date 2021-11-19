@@ -241,7 +241,40 @@
 
     
 
+    <tr onmouseout="macaw_stop()" onmouseover="macaw_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="macaw_still" style="opacity: 0;"><img src="./files/macaw.png" width=150></div>
+                  <img src="./files/macaw.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function combo_start() {
+                document.getElementById('macaw_still').style.opacity = "1";
+              }
+     function combo_stop() {
+                document.getElementById('macaw_still').style.opacity = "0";
+              }
+              combo_stop()
+              </script>
 
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="https://arxiv.org/abs/2008.06043">
+                  <papertitle>Offline Meta-Reinforcement Learning with Advantage Weighting</papertitle></a><br>
+              <a href="https://ericmitchell.ai/">Eric Mitchell</a>,
+              <strong>Rafael Rafailov</strong>, 
+              <a href="https://xbpeng.github.io/">Xue Bin Peng</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>h International Conference on Machine Learning (ICML), 2021</em><br>
+                <a href="href="https://arxiv.org/abs/2008.06043">arXiv</a> / <a href="hhttps://github.com/eric-mitchell/macaw">code</a>
+                </p><p></p>
+                <p>
+                Offline meta-RL is analogous to the widely successful supervised learning strategy of pre-training a model on a large batch of fixed, pre-collected data (possibly from various tasks) and fine-tuning the model to a new task with relatively little data. By nature of being offline, algorithms for offline meta-RL can utilize the largest possible pool of training data available and eliminate potentially unsafe or costly data collection during meta-training. This setting inherits the challenges of offline RL, but it differs significantly because offline RL does not generally consider a) transfer to new tasks or b) limited data from the test task, both of which we face in offline meta-RL. Targeting the offline meta-RL setting, we propose Meta-Actor Critic with Advantage Weighting (MACAW), an optimization-based meta-learning algorithm that uses simple, supervised regression objectives for both the inner and outer loop of meta-training.
+                </p>
+                </td>
+              </tr>
 		
 
 
@@ -253,14 +286,12 @@
         <!--<td width="25%"><img src="./files/teach_crop.jpg" alt="teach" width="160" height="160"></td>-->
         <td width="75%" valign="center">
         <p>
-        <a href="https://web.stanford.edu/class/cs379c/">
-            <papertitle>CS379C: Computational Models of the Neocortex - Spring 2020</papertitle>
+        <a href="http://cs330.stanford.edu/">
+            <papertitle>CS330: Deep Multi-Task and Meta Learning - Fall 2021</papertitle>
         </a>
         <br>
-        Course Assistant
+        Head Course Assistant
         </p>
-        <p>
-
         <p>
         <a href="http://cs330.stanford.edu/">
             <papertitle>CS330: Deep Multi-Task and Meta Learning - Fall 2020</papertitle>
@@ -269,12 +300,13 @@
         Course Assistant
         </p>
         <p>
-        <a href="http://cs330.stanford.edu/">
-            <papertitle>CS330: Deep Multi-Task and Meta Learning - Fall 2021</papertitle>
+        <a href="https://web.stanford.edu/class/cs379c/">
+            <papertitle>CS379C: Computational Models of the Neocortex - Spring 2020</papertitle>
         </a>
         <br>
-        Head Course Assistant
+        Course Assistant
         </p>
+        <p>
         </td>
       </tr>
       </tbody></table>
