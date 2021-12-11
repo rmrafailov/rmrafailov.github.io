@@ -137,6 +137,43 @@
 
 
 
+    <tr onmouseout="reflective_explorer_stop()" onmouseover="reflective_explorer_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="reflective_explorer_still" style="opacity: 0;"><img src="./files/reflective_explorer.png" width=150></div>
+                  <img src="./files/reflective_explorerL.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function combo_start() {
+                document.getElementById('reflective_explorer_still').style.opacity = "1";
+              }
+              function combo_stop() {
+                document.getElementById('reflective_explorer_still').style.opacity = "0";
+              }
+              reflective_explorer_stop()
+              </script>
+
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="https://offline-rl-neurips.github.io/2021/pdf/54.pdf">
+                  <papertitle>The Reflective Explorer: Online Meta-Exploration from Offline Data in Realistic Robotic Tasks</papertitle></a><br>
+              <strong>Rafael Rafailov</strong>,
+              Varun Kumar,
+              <a href="https://cs.stanford.edu/~tianheyu/">Tianhe Yu</a>,
+              <a href="https://www.avisingh.org/">Avi Singh</a>,
+              Mariano Phielipp,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>Offline Reinforcement Learning Workshop - NeurIPS 2021</em><br>
+                <a href="">arXiv</a>
+                </p><p></p>
+                <p>
+                In this work we develop an offline model-based meta-RL algorithm that operates from images in tasks with sparse rewards. Our approach has three main components: a novel strategy to construct meta-exploration trajectories from offline data, which allows agents to learn meaningful meta-test time task inference strategy; representation learning via variational filtering and latent conservative model-free policy optimization. We show that our method completely solves a realistic meta-learning task involving robot manipulation, while naive combinations of previous approaches fail.
+                </p>
+                </td>
+              </tr>
+              
+
     <tr onmouseout="eborl_stop()" onmouseover="eborl_start()">
             <td width="25%">
                   <heading2><i></i></heading2><br>
