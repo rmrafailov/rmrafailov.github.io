@@ -90,7 +90,7 @@
 	  <a href="https://statistics.stanford.edu/"> Statistics </a> and 
 	  <a href="https://cs.stanford.edu/"> Computer Science</a> (with distinction in research) at 
 	  <a href="https://www.stanford.edu/">Stanford University</a> advised by 
-	  <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> at the 
+	  <a href="https://ai.stanford.edu/~cbfinn/">Prof. Chelsea Finn</a> at the 
 	  <a href="https://irislab.stanford.edu/">IRIS lab</a>, part of the 
 	  <a href="https://ai.stanford.edu/">Stanford Artificial Intelligence Laboratory (SAIL)</a>.
 	</p>
@@ -136,6 +136,44 @@
 	  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
 
+
+
+    <tr onmouseout="seeing_stop()" onmouseover="seeing_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="seeing_still" style="opacity: 0;"><img src="./files/combo.png" width=150></div>
+                  <img src="./files/seeing.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function seeing_start() {
+                document.getElementById('seeing_still').style.opacity = "1";
+              }
+              
+              function seeing_stop() {
+                document.getElementById('seeing_still').style.opacity = "0";
+              }
+              seeing_stop()
+              </script>
+
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="">
+                  <papertitle>Vision-Based Manipulators Need to Also See from Their Hands </papertitle></a><br>
+              <a href="https://www.kylehsu.me/">Kyle Hsu*</a>,
+              <a href="https://www.linkedin.com/in/moojink/">Moo Jin Kim*</a>,
+              <strong>Rafael Rafailov</strong>, 
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>In Submission</em><br>
+                <a href="https://arxiv.org/abs/2102.08363">arXiv</a>
+                </p><p></p>
+                <p>
+                 A hand-centric (eye-in-hand) perspective consistently improves training efficiency and out-of-distribution generalization in robotic manipulation. These benefits hold across a variety of learning algorithms, experimental settings, and distribution shifts. When hand-centric observability is not sufficient, including a third-person perspective is necessary for learning, but also harms out-of-distribution generalization. To mitigate this, we propose to regularize the third-person information stream via a variational information bottleneck.
+                </p>
+                </td>
+              </tr>
+              
 
     <tr onmouseout="combo_stop()" onmouseover="combo_start()">
             <td width="25%">
@@ -204,7 +242,7 @@
                 <a href="https://arxiv.org/abs/2107.08829">arXiv</a>
                 </p><p></p>
                 <p>
-                We develop a variational model-based adversarial imitation learning (V-MAIL) algorithm. We traain a low-dimensional variational dynamics model from high-dimensional image observtions, which provides a strong signal for representation learning. We then use on-policy model-generated data to train an adversarial imitation learning agent which improves sample efficiency and stability of adversarial training. We can also transfer the learned model to new imitation tasks, enabling zero-shot adversarial imitation learning.
+                We develop a variational model-based adversarial imitation learning (V-MAIL) algorithm. We train a low-dimensional variational dynamics model from high-dimensional image observtions, which provides a strong signal for representation learning. We then use on-policy model-generated data to train an adversarial imitation learning agent which improves sample efficiency and stability of adversarial training. We can also transfer the learned model to new imitation tasks, enabling zero-shot adversarial imitation learning.
                 </p>
                 </td>
               </tr>
