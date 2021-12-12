@@ -137,6 +137,78 @@
 
 
 
+
+    <tr onmouseout="vmail_stop()" onmouseover="vmail_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="vmail_still" style="opacity: 0;"><img src="./files/vmail.png" width=150></div>
+                  <img src="./files/vmail.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function vmail_start() {
+                document.getElementById('vmail_still').style.opacity = "1";
+              }
+     function vmail_stop() {
+                document.getElementById('vmail_still').style.opacity = "0";
+              }
+              vmail_stop()
+              </script>
+
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="https://arxiv.org/pdf/2107.08829.pdf">
+                  <papertitle>Visual Adversarial Imitation Learning using Variational Models</papertitle></a><br>
+              <strong>Rafael Rafailov</strong>,
+              <a href="https://cs.stanford.edu/~tianheyu/">Tianhe Yu</a>,
+              <a href="https://homes.cs.washington.edu/~aravraj/">Aravind Rajeswaran</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>Neural Information Processing Systems (NeurIPS), 2021</em><br>
+                <a href="https://arxiv.org/abs/2107.08829">arXiv</a> / <a href="https://sites.google.com/view/variational-mail/">website</a> / <a href="https://github.com/rmrafailov/VMAIL/">code</a>
+                </p><p></p>
+                <p>
+                We develop a variational model-based adversarial imitation learning (V-MAIL) algorithm. We train a low-dimensional variational dynamics model from high-dimensional image observtions, which provides a strong signal for representation learning. We then use on-policy model-generated data to train an adversarial imitation learning agent which improves sample efficiency and stability of adversarial training. We can also transfer the learned model to new imitation tasks, enabling zero-shot adversarial imitation learning.
+                </p>
+                </td>
+              </tr>
+              
+    <tr onmouseout="combo_stop()" onmouseover="combo_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="combo_still" style="opacity: 0;"><img src="./files/combo.png" width=150></div>
+                  <img src="./files/combo.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function combo_start() {
+                document.getElementById('combo_still').style.opacity = "1";
+              }
+     function combo_stop() {
+                document.getElementById('combo_still').style.opacity = "0";
+              }
+              combo_stop()
+              </script>
+
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="https://arxiv.org/pdf/2102.08363.pdf">
+                  <papertitle>COMBO: Conservative Offline Model-Based Policy Optimization</papertitle></a><br>
+              <a href="https://cs.stanford.edu/~tianheyu/">Tianhe Yu*</a>,
+              <a href="https://aviralkumar2907.github.io/">Aviral Kumar*</a>,
+              <strong>Rafael Rafailov</strong>, 
+              <a href="https://homes.cs.washington.edu/~aravraj/">Aravind Rajeswaran</a>,
+              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>Neural Information Processing Systems (NeurIPS), 2021</em><br>
+                <a href="https://arxiv.org/abs/2102.08363">arXiv</a>
+                </p><p></p>
+                <p>
+                Model-based offline RL methods rely on explicit uncertainty quantification for incorporating pessimism, which can be difficult and unreliable with complex models. We overcome this limitation by developing a new model-based offline RL algorithm, COMBO, that regularizes the value function on out-of-support state-action tuples generated via rollouts under the learned model. We show COMBO with theoretical guarantees and also find that COMBO consistently performs as well or better as compared to prior offline model-free and model-based methods on widely studied offline RL benchmarks, including image-based tasks.
+                </p>
+                </td>
+              </tr>
+
+
     <tr onmouseout="reflective_explorer_stop()" onmouseover="reflective_explorer_start()">
             <td width="25%">
                   <heading2><i></i></heading2><br>
@@ -244,82 +316,7 @@
                 </p>
                 </td>
               </tr>
-              
-
-    <tr onmouseout="combo_stop()" onmouseover="combo_start()">
-            <td width="25%">
-                  <heading2><i></i></heading2><br>
-              <div class="one">
-                  <div class="two" id="combo_still" style="opacity: 0;"><img src="./files/combo.png" width=150></div>
-                  <img src="./files/combo.png" width=150 >
-              </div>
-              <script type="text/javascript">
-              function combo_start() {
-                document.getElementById('combo_still').style.opacity = "1";
-              }
-     function combo_stop() {
-                document.getElementById('combo_still').style.opacity = "0";
-              }
-              combo_stop()
-              </script>
-
-                </td>
-                <td valign="top" width="75%">
-                <p><a href="https://arxiv.org/pdf/2102.08363.pdf">
-                  <papertitle>COMBO: Conservative Offline Model-Based Policy Optimization</papertitle></a><br>
-              <a href="https://cs.stanford.edu/~tianheyu/">Tianhe Yu*</a>,
-              <a href="https://aviralkumar2907.github.io/">Aviral Kumar*</a>,
-              <strong>Rafael Rafailov</strong>, 
-              <a href="https://homes.cs.washington.edu/~aravraj/">Aravind Rajeswaran</a>,
-              <a href="http://people.eecs.berkeley.edu/~svlevine">Sergey Levine</a>,
-              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
-                <em>Neural Information Processing Systems (NeurIPS), 2021</em><br>
-                <a href="https://arxiv.org/abs/2102.08363">arXiv</a>
-                </p><p></p>
-                <p>
-                Model-based offline RL methods rely on explicit uncertainty quantification for incorporating pessimism, which can be difficult and unreliable with complex models. We overcome this limitation by developing a new model-based offline RL algorithm, COMBO, that regularizes the value function on out-of-support state-action tuples generated via rollouts under the learned model. We show COMBO with theoretical guarantees and also find that COMBO consistently performs as well or better as compared to prior offline model-free and model-based methods on widely studied offline RL benchmarks, including image-based tasks.
-                </p>
-                </td>
-              </tr>
-
-
-
-    <tr onmouseout="vmail_stop()" onmouseover="vmail_start()">
-            <td width="25%">
-                  <heading2><i></i></heading2><br>
-              <div class="one">
-                  <div class="two" id="vmail_still" style="opacity: 0;"><img src="./files/vmail.png" width=150></div>
-                  <img src="./files/vmail.png" width=150 >
-              </div>
-              <script type="text/javascript">
-              function vmail_start() {
-                document.getElementById('vmail_still').style.opacity = "1";
-              }
-     function vmail_stop() {
-                document.getElementById('vmail_still').style.opacity = "0";
-              }
-              vmail_stop()
-              </script>
-
-                </td>
-                <td valign="top" width="75%">
-                <p><a href="https://arxiv.org/pdf/2107.08829.pdf">
-                  <papertitle>Visual Adversarial Imitation Learning using Variational Models</papertitle></a><br>
-              <strong>Rafael Rafailov</strong>,
-              <a href="https://cs.stanford.edu/~tianheyu/">Tianhe Yu</a>,
-              <a href="https://homes.cs.washington.edu/~aravraj/">Aravind Rajeswaran</a>,
-              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
-                <em>Neural Information Processing Systems (NeurIPS), 2021</em><br>
-                <a href="https://arxiv.org/abs/2107.08829">arXiv</a> / <a href="https://sites.google.com/view/variational-mail/">website</a> / <a href="https://github.com/rmrafailov/VMAIL/">code</a>
-                </p><p></p>
-                <p>
-                We develop a variational model-based adversarial imitation learning (V-MAIL) algorithm. We train a low-dimensional variational dynamics model from high-dimensional image observtions, which provides a strong signal for representation learning. We then use on-policy model-generated data to train an adversarial imitation learning agent which improves sample efficiency and stability of adversarial training. We can also transfer the learned model to new imitation tasks, enabling zero-shot adversarial imitation learning.
-                </p>
-                </td>
-              </tr>
-
-
-
+             
 
     <tr onmouseout="lompo_stop()" onmouseover="lompo_start()">
             <td width="25%">
