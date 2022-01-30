@@ -137,6 +137,42 @@
 
 
 
+    <tr onmouseout="seeing_stop()" onmouseover="seeing_start()">
+            <td width="25%">
+                  <heading2><i></i></heading2><br>
+              <div class="one">
+                  <div class="two" id="seeing_still" style="opacity: 0;"><img src="./files/seeing.png" width=150></div>
+                  <img src="./files/seeing.png" width=150 >
+              </div>
+              <script type="text/javascript">
+              function seeing_start() {
+                document.getElementById('seeing_still').style.opacity = "1";
+              }
+              
+              function seeing_stop() {
+                document.getElementById('seeing_still').style.opacity = "0";
+              }
+              seeing_stop()
+              </script>
+
+                </td>
+                <td valign="top" width="75%">
+                <p><a href="">
+                  <papertitle>Vision-Based Manipulators Need to Also See from Their Hands </papertitle></a><br>
+              <a href="https://www.kylehsu.me/">Kyle Hsu*</a>,
+              <a href="https://www.linkedin.com/in/moojink/">Moo Jin Kim*</a>,
+              <strong>Rafael Rafailov</strong>, 
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
+                <em>International Conference on Learning Representations (ICLR) 2022</em><font color="red"><strong> (Oral, top 1.5%)</strong></font><br>
+                <a href="">arXiv</a>
+                </p><p></p>
+                <p>
+                 A hand-centric (eye-in-hand) perspective consistently improves training efficiency and out-of-distribution generalization in robotic manipulation. These benefits hold across a variety of learning algorithms, experimental settings, and distribution shifts. When hand-centric observability is not sufficient, including a third-person perspective is necessary for learning, but also harms out-of-distribution generalization. To mitigate this, we propose to regularize the third-person information stream via a variational information bottleneck.
+                </p>
+                </td>
+              </tr>
+              
 
     <tr onmouseout="vmail_stop()" onmouseover="vmail_start()">
             <td width="25%">
@@ -276,43 +312,6 @@
                 </p><p></p>
                 <p>
                 Offline RL methods require human-defined reward labels to learn from offline datasets. Reward specification remains a major challenge for deep RL algorithms in the real world since designing reward functions could take considerable manual effort. In contrast, in many settings, it is easier for users to provide examples of a completed task such as images than specifying a complex reward function. Based on this observation, we propose an algorithm that can learn behaviors from offline datasets without reward labels, instead using a small number of example images.
-                </p>
-                </td>
-              </tr>
-
-
-    <tr onmouseout="seeing_stop()" onmouseover="seeing_start()">
-            <td width="25%">
-                  <heading2><i></i></heading2><br>
-              <div class="one">
-                  <div class="two" id="seeing_still" style="opacity: 0;"><img src="./files/seeing.png" width=150></div>
-                  <img src="./files/seeing.png" width=150 >
-              </div>
-              <script type="text/javascript">
-              function seeing_start() {
-                document.getElementById('seeing_still').style.opacity = "1";
-              }
-              
-              function seeing_stop() {
-                document.getElementById('seeing_still').style.opacity = "0";
-              }
-              seeing_stop()
-              </script>
-
-                </td>
-                <td valign="top" width="75%">
-                <p><a href="">
-                  <papertitle>Vision-Based Manipulators Need to Also See from Their Hands </papertitle></a><br>
-              <a href="https://www.kylehsu.me/">Kyle Hsu*</a>,
-              <a href="https://www.linkedin.com/in/moojink/">Moo Jin Kim*</a>,
-              <strong>Rafael Rafailov</strong>, 
-              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
-              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a><br>
-                <em>International Conference on Learning Representations (ICLR) 2022</em><font color="red"><strong> (Oral, top 1.5%)</strong></font><br>
-                <a href="">arXiv</a>
-                </p><p></p>
-                <p>
-                 A hand-centric (eye-in-hand) perspective consistently improves training efficiency and out-of-distribution generalization in robotic manipulation. These benefits hold across a variety of learning algorithms, experimental settings, and distribution shifts. When hand-centric observability is not sufficient, including a third-person perspective is necessary for learning, but also harms out-of-distribution generalization. To mitigate this, we propose to regularize the third-person information stream via a variational information bottleneck.
                 </p>
                 </td>
               </tr>
